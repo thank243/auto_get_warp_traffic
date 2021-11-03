@@ -52,7 +52,6 @@ g = 0
 b = 0
 while True:
 	result = run()
-	print(referrer)
 	if result == 200:
 		g = g + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
