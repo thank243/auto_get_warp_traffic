@@ -24,6 +24,7 @@ def digitString(stringLength):
 		print(error)	
 url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
 def run():
+	print(referrer)
 	try:
 		install_id = genString(22)
 		body = {"key": "{}=".format(genString(43)),
