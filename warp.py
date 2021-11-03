@@ -51,6 +51,8 @@ def run():
 g = 0
 b = 0
 while True:
+	if g == 1024:
+		break
 	result = run()
 	if result == 200:
 		g = g + 1
