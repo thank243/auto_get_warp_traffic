@@ -69,7 +69,7 @@ while True:
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print("")
 		print("Getting WARP+ Traffic")
-		print("[:(] Error when connecting to server.")
+		print("\n[:(] Error when connecting to server.")
 		print(f"[#] Total: {g} Good {b} Bad")	
 		print("[*] After 5 seconds, a new request will be sent.")
 		time.sleep(5)
