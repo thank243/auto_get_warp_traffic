@@ -1,0 +1,23 @@
+name: 'Getting WARP+ Traffic'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  auto_getting_traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checking'
+        uses: actions/checkout@v2
+
+      - name: 'Setting Python'
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+
+      - name: 'Getting WARP+ Traffic'
+        env:
+          TERM: xterm 
+          DEVICEID: ${{ secrets.DEVICEID }}  
+        run: python warp.py
