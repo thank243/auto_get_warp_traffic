@@ -6,7 +6,6 @@ import string
 import time
 import os
 import sys
-os.system("title WARP-PLUS-CLOUDFLARE By ALIILAPRO")
 os.system('cls' if os.name == 'nt' else 'clear')
 print('Getting WARP+ Traffic on Github Actions')
 referrer = os.environ["DEVICEID"]
@@ -51,18 +50,18 @@ def run():
 g = 0
 b = 0
 while True:
-	if g == 1024:
-		break
 	result = run()
 	if result == 200:
 		g = g + 1
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print("")
 		print("Getting WARP+ Traffic")
-		print("")
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
+		if g == 1024:
+		    print("Job compeleted!")
+		    break
 		print("[*] After 18 seconds, a new request will be sent.")
 		time.sleep(18)
 	else:
@@ -70,7 +69,6 @@ while True:
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print("")
 		print("Getting WARP+ Traffic")
-		print("")
 		print("[:(] Error when connecting to server.")
 		print(f"[#] Total: {g} Good {b} Bad")	
 		print("[*] After 5 seconds, a new request will be sent.")
