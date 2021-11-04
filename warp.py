@@ -59,7 +59,7 @@ while True:
 		print(f"\n[-] WORK ON ID: {referrer}")    
 		print(f"[:)] {g} GB has been successfully added to your account.")
 		print(f"[#] Total: {g} Good {b} Bad")
-		if g == 10:
+		if g == 50:
 		    print("Job compeleted!")
 		    break
 		print("[*] After 18 seconds, a new request will be sent.")
