@@ -68,7 +68,7 @@ while True:
         time.sleep(18)
     else:
         bad = bad + 1
-        print(f"[:)] {ret}\n"
+        print(f"[:(] {ret}\n"
               f"[#] Total: {good} Good {bad} Bad\n"
               "[*] After 5 seconds, a new request will be sent.\n")
         time.sleep(5)
