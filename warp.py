@@ -62,7 +62,7 @@ while True:
               f"[:)] {good} GB has been successfully added to your account.\n"
               f"[#] Total: {good} Good {bad} Bad")
         if good == 50:
-            print("Job completed!")
+            print("[*] Job completed!")
             break
         print("[*] After 18 seconds, a new request will be sent.\n")
         time.sleep(18)
