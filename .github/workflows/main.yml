@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * *'
 jobs:
   auto_getting_traffic:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - name: 'Setting Python'
@@ -14,6 +14,5 @@ jobs:
           python-version: '3.x'
       - name: 'Getting WARP+ Traffic'
         env:
-          TERM: xterm 
           DEVICEID: ${{secrets.DEVICEID}}
         run: python warp.py
