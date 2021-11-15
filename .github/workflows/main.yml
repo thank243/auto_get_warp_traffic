@@ -1,8 +1,6 @@
 name: 'Getting WARP+ Traffic'
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 jobs:
   auto_getting_traffic:
     runs-on: macos-latest
